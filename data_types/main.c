@@ -14,21 +14,21 @@ int main()
     printf("char [%d bytes], %d até %d\n", sizeof(c2), c1, c2);
     printf("unsigned char [%d bytes], 0 até %u\n", sizeof(c3), c3);
 
-    // -2,147,483,648 (INT_MIN) até 2,147,483,647 (INT_MAX)
+    // -2147483648 (INT_MIN) até 2147483647 (INT_MAX)
     int i1 = INT_MIN;
     int i2 = INT_MAX;
 
-    // 0 até 4,294,967,295 (UINT_MAX)
+    // 0 até 4294967295 (UINT_MAX)
     unsigned int i3 = UINT_MAX;
 
     printf("int [%d bytes], %d até %d\n", sizeof(i2), i1, i2);
     printf("unsigned int [%d bytes], 0 até %u\n", sizeof(i3), i3);
 
-    //-32,768 (SHRT_MIN) até 32,767 (SHRT_MAX)
+    //-32768 (SHRT_MIN) até 32767 (SHRT_MAX)
     short s1 = SHRT_MIN;
     short s2 = SHRT_MAX;
 
-    // 0 até 65,535 (USHRT_MAX)
+    // 0 até 65535 (USHRT_MAX)
     unsigned short s3 = USHRT_MAX;
 
     printf("short [%d bytes], %d até %d\n", sizeof(s2), s1, s2);
@@ -44,18 +44,18 @@ int main()
     printf("long [%d bytes], %li até %li\n", sizeof(l2), l1, l2);
     printf("unsigned long [%d bytes], 0 até %lu\n", sizeof(l3), l3);
 
-    // 1.2E-38 (FLT_MIN) até 3.4E+38 (FLT_MAX)
+    // 1.175494E-38 até 3.402823E+38
     float f1 = FLT_MIN;
     float f2 = FLT_MAX;
 
     printf("float [%d bytes], %E até %E\n", sizeof(f2), f1, f2);
     printf("-float [%d bytes], %E até %E\n", sizeof(f2), -f1, -f2);
 
-    // 2.3E-308 (DBL_MIN) até 1.7E+308 (DBL_MAX)
+    //  2.225074E-308 até 1.797693E+308
     double d1 = DBL_MIN;
     double d2 = DBL_MAX;
 
-    // 3.4E-4932 (LDBL_MIN) até 1.1E+4932 (LDBL_MAX)
+    // 0.000000E+00 até 6.953266E-310
     long double d3 = LDBL_MIN;
     long double d4 = LDBL_MAX;
 
