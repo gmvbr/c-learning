@@ -1,6 +1,6 @@
 # Hello world
 
-## Compilar
+## Build
 ```
 mkdir -p build && cd build
 cmake ..
